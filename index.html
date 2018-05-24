@@ -426,8 +426,8 @@
                         <strong>Address</strong><br>
                         <br>
                         admin@forwardpass.io<br>
-                        <!-- 421 Hawkins Ridge<br> -->
-                        <!-- Jasper, GA, 30143, USA<br> -->
+                        2309 Windcliff Drive<br>
+                        Marietta, GA, 30067, USA<br>
                         Phone: (404) 789-1654
                         <ul class="social">
                             <li><a href="https://www.google.com"><span class="fa fa-facebook"></span></a></li>
@@ -440,20 +440,21 @@
                 </div>
 
                 <div class="col-md-9">
-                    <form autocomplete="off">
+                    <form autocomplete="off" method="post" name="email-form" action="form-to-email.php">
                         <div class="row">
                             <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Your Name">
-                                <input type="text" class="form-control" placeholder="Phone No.">
+                                <input type="text" class="form-control" name="name" placeholder="Your Name">
+                                <input type="text" class="form-control" name="phone-number" placeholder="Phone No.">
                             </div>
                             <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Email">
-                                <input type="text" class="form-control" placeholder="Subject">
+                                <input type="text" class="form-control" name="email" placeholder="Email">
+                                <input type="text" class="form-control" name="subject" placeholder="Subject">
                             </div>
                         </div>
-                        <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+                        <textarea class="form-control" rows="4" name="message" placeholder="Message"></textarea>
                         <div class="text-right">
-                            <a href="https://www.google.com" class="btn send-btn">Send</a>
+                        <!-- <input type="submit" value="Submit" class="btn send-btn">Send -->
+                        <a href="mailto: matteo.alessandro@forwardpass.io" class="btn send-btn">Send</a>
                         </div>
                     </form>
                 </div>
