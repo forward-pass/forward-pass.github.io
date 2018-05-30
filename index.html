@@ -443,18 +443,19 @@
                     <form autocomplete="off" method="post" name="email-form" action="form-to-email.php">
                         <div class="row">
                             <div class="col-md-6">
-                                <input type="text" class="form-control" name="name" placeholder="Your Name">
-                                <input type="text" class="form-control" name="phone-number" placeholder="Phone No.">
+                                <input type="text" class="form-control" name="_name" placeholder="Your Name">
+                                <input type="text" class="form-control" name="_phone-number" placeholder="Phone No.">
                             </div>
                             <div class="col-md-6">
-                                <input type="text" class="form-control" name="email" placeholder="Email">
+                                <!-- <input type="text" class="form-control" name="email" placeholder="Email"> -->
                                 <input type="text" class="form-control" name="_subject" placeholder="Subject">
                             </div>
                         </div>
                         <textarea class="form-control" rows="4" name="_message" placeholder="Message"></textarea>
                         <div class="text-right">
                         <!-- <input type="submit" value="Submit" class="btn send-btn">Send -->
-                        <a href="mailto: matteo.alessandro@forwardpass.io?Subject=_subject?Body=_message" target="_top" class="btn send-btn">Send</a>
+                        <a href="mailto: matteo.alessandro@forwardpass.io?Subject=_subject&Body=name:_name%0D%0Aphone number:_phone-number%0D%0Aemail:_message"
+                        target="_top" class="btn send-btn">Send</a>
                         </div>
                     </form>
                 </div>
