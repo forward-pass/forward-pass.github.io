@@ -426,8 +426,8 @@
                         <strong>Address</strong><br>
                         <br>
                         admin@forwardpass.io<br>
-                        2309 Windcliff Drive<br>
-                        Marietta, GA, 30067, USA<br>
+                        <!-- 2309 Windcliff Drive<br>
+                        Marietta, GA, 30067, USA<br> -->
                         Phone: (404) 789-1654
                         <ul class="social">
                             <li><a href="https://www.google.com"><span class="fa fa-facebook"></span></a></li>
@@ -448,13 +448,13 @@
                             </div>
                             <div class="col-md-6">
                                 <input type="text" class="form-control" name="email" placeholder="Email">
-                                <input type="text" class="form-control" name="subject" placeholder="Subject">
+                                <input type="text" class="form-control" name="_subject" placeholder="Subject">
                             </div>
                         </div>
-                        <textarea class="form-control" rows="4" name="message" placeholder="Message"></textarea>
+                        <textarea class="form-control" rows="4" name="_message" placeholder="Message"></textarea>
                         <div class="text-right">
                         <!-- <input type="submit" value="Submit" class="btn send-btn">Send -->
-                        <a href="mailto: matteo.alessandro@forwardpass.io&subject=subject&body=message"class="btn send-btn">Send</a>
+                        <a href="mailto: matteo.alessandro@forwardpass.io?Subject=_subject?Body=_message" target="_top" class="btn send-btn">Send</a>
                         </div>
                     </form>
                 </div>
