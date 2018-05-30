@@ -440,8 +440,7 @@
                 </div>
 
                 <div class="col-md-9">
-                    <form autocomplete="off" method="post" name="email-form" action=href="mailto: matteo.alessandro@forwardpass.io?Subject= _subject &Body=name:_name%0D%0Aphone number:_phone-number%0D%0Aemail:_message"
-                    target="_top">
+                    <form autocomplete="off" method="post" name="email-form" action=href="mailto: matteo.alessandro@forwardpass.io?Subject= _subject &Body=name:_name%0D%0Aphone number:_phone-number%0D%0Aemail:_message">
                         <div class="row">
                             <div class="col-md-6">
                                 <input type="text" class="form-control" name="_name" placeholder="Your Name">
@@ -455,7 +454,10 @@
                         <textarea class="form-control" rows="4" name="_message" placeholder="Message"></textarea>
                         <div class="text-right">
                         <!-- <input type="submit" value="Submit" class="btn send-btn">Send -->
-                        <a type="submit" class="btn send-btn">Send</a>
+                        <a class="btn send-btn">
+                            <input type="submit">
+                            Send
+                        </a>
                         </div>
                     </form>
                 </div>
