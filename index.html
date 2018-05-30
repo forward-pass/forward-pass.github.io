@@ -429,18 +429,19 @@
                         <!-- 2309 Windcliff Drive<br>
                         Marietta, GA, 30067, USA<br> -->
                         Phone: (404) 789-1654
-                        <ul class="social">
+                        <!-- <ul class="social">
                             <li><a href="https://www.google.com"><span class="fa fa-facebook"></span></a></li>
                             <li><a href="https://www.google.com"><span class="fa fa-google-plus"></span></a></li>
                             <li><a href="https://www.google.com"><span class="fa fa-twitter"></span></a></li>
                             <li><a href="https://www.google.com"><span class="fa fa-github"></span></a></li>
                             <li><a href="https://www.google.com"><span class="fa fa-youtube"></span></a></li>
-                          </ul>
+                          </ul> -->
                     </address>
                 </div>
 
                 <div class="col-md-9">
-                    <form autocomplete="off" method="post" name="email-form" action="form-to-email.php">
+                    <form autocomplete="off" method="post" name="email-form" action=href="mailto: matteo.alessandro@forwardpass.io?Subject= _subject &Body=name:_name%0D%0Aphone number:_phone-number%0D%0Aemail:_message"
+                    target="_top">
                         <div class="row">
                             <div class="col-md-6">
                                 <input type="text" class="form-control" name="_name" placeholder="Your Name">
@@ -454,8 +455,7 @@
                         <textarea class="form-control" rows="4" name="_message" placeholder="Message"></textarea>
                         <div class="text-right">
                         <!-- <input type="submit" value="Submit" class="btn send-btn">Send -->
-                        <a href="mailto: matteo.alessandro@forwardpass.io?Subject=_subject&Body=name:_name%0D%0Aphone number:_phone-number%0D%0Aemail:_message"
-                        target="_top" class="btn send-btn">Send</a>
+                        <a type="submit" class="btn send-btn">Send</a>
                         </div>
                     </form>
                 </div>
