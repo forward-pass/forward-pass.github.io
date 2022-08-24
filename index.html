@@ -7,9 +7,9 @@
     <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Forward Pass - Machine Learning Solutions</title>
-    <meta name="description" content="YForward Pass">
+    <meta name="description" content="Forward Pass">
     <meta name="keywords" content="forward, pass, forwardpass, LLC, ">
-    <meta name="author" content="Matteo Alessandro">
+    <meta name="author" content="Matteo Alessandro, Steffen Lim">
     
     <!-- Favicons
     ================================================== -->
@@ -78,7 +78,7 @@
             </nav>
 
             <div class="content">
-                <h2>Forward_Pass</h2>
+                <h2>Forward Pass</h2>
                 <hr>
                 <div class="header-text btn">
                     <h1><span id="head-title"></span></h1>
@@ -97,10 +97,25 @@
             <div class="row text-center">
                 <div class="col-md-8 col-md-offset-2">
                     <div class="section-title">
-                        <h2>Meet Us</h2>
+                        <h2>Vision</h2>
                         <hr>
                     </div>
-                    <p>We provide custom Machine-Learning-based software solutions for your business, taking care of every step of the process, to solve the problems no one else can.</p>
+                    <p style="font-size: 120%;">
+                        Our vision is to take a massive step toward the robot 
+                        revolution where labor and mundane tasks are done by 
+                        ubiquitous general-purpose robots; just as computers 
+                        have proliferated across everyone’s daily lives in the 
+                        decades prior. To achieve ubiquity, we aim to provide 
+                        robots to the hands of as many people as possible by 
+                        designing a cheap yet capable robotic platform through 
+                        open-source accessibility. We also believe that 
+                        intelligent robots are orders of magnitude more useful 
+                        than those being utilized in the current industrial 
+                        factories. To this end, it is of the utmost importance 
+                        to us that the software is easily accessible by current 
+                        state-of-the-art machine learning libraries such as 
+                        PyTorch and TensorFlow.
+                    </p>
                     <a href="#services" class="down-btn page-scroll">
                         <span class="fa fa-angle-down"></span>
                     </a>
@@ -126,7 +141,7 @@
     <div id="services">
         <div class="container text-center">
             <div class="row">
-                <div class="col-md-8 col-md-offset-2">
+                <div class="col-md-12">
                     <div class="section-title">
                         <h2>Services</h2>
                         <hr>
@@ -138,34 +153,58 @@
             <div class="space"></div>
 
             <div class="row">
-                <div class="col-md-4 col-sm-4">
+                <div class="col-md-6 col-sm-4">
                     <div class="service">
-                        <span class="fa fa-code fa-3x"></span>
-                        <h4>Machine Learning</h4>
-                        <p>Seizing the power of Artificial Intelligence for your enterprise can be decisive: and it is now easier than ever.
-                            We create custom solutions for your business using the most advanced technologies, designed and trained for your specific application.
+                        <span class="fa fa-star fa-3x"></span>
+                        <h4>Dorian</h4>
+                        <p>
+                            The Dorian is our main product that utilizes a 
+                            7-degree-of-freedom cable-driven serial robotic arm. 
+                            The arm is projected to be able to lift 5kg of 
+                            weight at full cantilever at the highest torque 
+                            settings. It comprises mostly of 3D printed 
+                            components made of PLA+ plastic. The cable-driven 
+                            nature of the design allows for all the motors to 
+                            be positioned stationarily at the base of the 
+                            robotic arm. The cable design also utilizes pulley 
+                            reductions to allow for direct drive control and 
+                            zero backlash.
                         </p>
                     </div>
                 </div>
 
-                <div class="col-md-4 col-sm-4">
+                <div class="col-md-6 col-sm-4">
                     <div class="service">
-                        <span class="fa fa-book fa-3x"></span>
-                        <h4>Data Analysis</h4>
-                        <p>Get the most out of your data: we organize it in a funcitonal way, in order to speed up processes through smart algorythms and increase productivity while reducing costs.
-
+                        <span class="fa fa-circle fa-3x"></span>
+                        <h4>Analog Encoder</h4>
+                        <p>
+                            The analog encoder system we have developed is a 
+                            similar design to the ones developed by Haddington 
+                            Dynamics but with improvements allowing it to be 
+                            more accurate and precise while also being a global 
+                            positional encoder. The system utilizes a hall 
+                            effect sensor to provide a rough initial prior angle 
+                            while an optical analog sensor allows for the 
+                            refinement of the angle to exceed 17 bits of 
+                            precision reliably. Although this may not be on par 
+                            with high-end encoders, this will be orders of 
+                            magnitude cheaper to produce as it can even work 
+                            with imprecise 3D printed encoder wheels. This 
+                            encoder is utilized in the feedback control loop 
+                            of the Dorian but can also be a stand-alone product 
+                            for any encoder application.
                         </p>
                     </div>
                 </div>
 
-                <div class="col-md-4 col-sm-4">
+                <!-- <div class="col-md-4 col-sm-4">
                     <div class="service">
                         <span class="fa fa-plug fa-3x"></span>
                         <h4>Deployment</h4>
                         <p>Your business is unique: so should be your solutions. We securely provide both cloud and on-premises implementations, and assess which solution better fits your needs.
                             We take care of every step with transparancey, from implementation to maintenance, providing counseling along the way. </p>
                     </div>
-                </div>
+                </div> -->
             </div>
             <a href="#works" class="down-btn page-scroll">
                 <span class="fa fa-angle-down"></span>
@@ -188,15 +227,36 @@
             <div class="row text-center">
                 <div class="col-md-8 col-md-offset-2">
                     <div class="section-title">
-                        <h2>Our Projects</h2>
+                        <h2>Updates & Upcomming Plans</h2>
                         <hr>
                     </div>
-                    <p>Current projects in progress</p>
+                    <p style="font-size: 120%;">
+                        Dorian is on track to test a 2DOF prototype. This will 
+                        include longevity testing, winch windup concerns, and 
+                        cable friction concerns.
+                    </p>
+                    <br/>
+                    <p style="font-size: 120%;">
+                        The Analog Encoder needs a test on new hall effect 
+                        sensors for the prior angles.
+                    </p>
+                    <br/>
+                    <p style="font-size: 120%;">
+                        Plans for customer discovery to gain a better 
+                        understanding of the general demand for our products.
+                    </p>
+                    <br/>
+                    <p style="font-size: 120%;">
+                        Plans for starting a YouTube channel to post development 
+                        updates as well as gaining traction on the general 
+                        concept.
+                    </p>
                 </div>
             </div>
             <div class="space"></div>
         </div>
-        <div class="container-fluid">
+        
+        <!-- <div class="container-fluid">
             <div class="row">
                 <div class="col-md-3 col-sm-6 nopadding">
                     <div class="portfolio-item">
@@ -221,7 +281,7 @@
                                     <p class="lead">Power Pole classifier</p>
                                     <div class="hline"></div>
                                 </div>
-                                <img src="img/portfolio/02.jpg" class="img-responsive" alt="...">  <!-- uncomment to show image-->
+                                <img src="img/portfolio/02.jpg" class="img-responsive" alt="..."> 
                             </a>
                         </div>
                     </div>
@@ -236,7 +296,7 @@
                                     <div class="hline"></div>
                                 </div>
                             </a>
-                            <img src="img/portfolio/03.jpg" class="img-responsive" alt="...">  <!-- uncomment to show image-->
+                            <img src="img/portfolio/03.jpg" class="img-responsive" alt="...">  
                         </div>
                     </div>
                 </div>
@@ -250,12 +310,12 @@
                                     <div class="hline"></div>
                                 </div>
                             </a>
-                            <img src="img/portfolio/04.jpg" class="img-responsive" alt="...">  <!-- uncomment to show image-->
+                            <img src="img/portfolio/04.jpg" class="img-responsive" alt="...">  
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="space"></div>
         <div class="text-center">
             <!-- <a href="https://www.google.com" class="btn read-more-btn">Check on Github</a> -->
@@ -307,7 +367,7 @@
             <div class="row">
                 <div class="col-md-12 col-sm-12">
                     <div class="row">
-                        <div class="col-md-4 col-sm-4">
+                        <!-- <div class="col-md-4 col-sm-4">
                             <div class="team">
                                 <img src="img/team/02.jpg" class="img-responsive img-circle" alt="...">
                                 <br>
@@ -315,29 +375,31 @@
                                 <p class="small">CEO/Cofounder</p>
                                 <hr>
                             </div>
-                        </div>
+                        </div> -->
 
-                        <div class="col-md-4 col-sm-4">
+                        <div class="col-md-6 col-sm-6">
                                 <div class="team">
-                                    <img src="img/team/01.jpg" class="img-responsive img-circle" alt="...">
+                                    <img src="img/team/Steffen.jpg" class="img-responsive img-circle" alt="...">
                                     <br>
                                     <h4>Steffen Lim</h4>
-                                    <p class="small">COO/Cofounder</p>
+                                    <p class="small">Cofounder</p>
+                                    <p class="small"><a href = "mailto: steffen.lim@forwardpass.io">steffen.lim@forwardpass.io</a></p>
                                     <hr>
                                 </div>
                             </div>
                         
-                        <div class="col-md-4 col-sm-4">
+                        <div class="col-md-6 col-sm-6">
                             <div class="team">
-                                <img src="img/team/04.jpg" class="img-responsive img-circle" alt="...">
+                                <img src="img/team/Matteo.jpg" class="img-responsive img-circle" alt="...">
                                 <br>
                                 <h4>Matteo Alessandro</h4>
-                                <p class="small">CFO/Cofounder</p>
+                                <p class="small">Cofounder</p>
+                                <p class="small"><a href = "mailto: matteo.alessandro@forwardpass.io">matteo.alessandro@forwardpass.io</a></p>
                                 <hr>
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-sm-4">
+                        <!-- <div class="col-md-4 col-sm-4">
                             <div class="team">
                                 <img src="img/team/03.jpg" class="img-responsive img-circle" alt="...">
                                 <br>
@@ -345,7 +407,7 @@
                                 <p class="small">CTO/Cofounder</p>
                                 <hr>
                             </div>
-                        </div>
+                        </div> -->
                         <!--
                         <div class="col-md-4 col-sm-4">
                             <div class="team">
@@ -429,12 +491,13 @@
             <div class="row">
                 <div class="col-md-3">
                     <address>
-                        <strong>Address</strong><br>
+                        <strong>Email</strong><br>
                         <br>
-                        contact@forwardpass.io<br>
+                        <a style="color: #FFFFFF" href = "mailto: contact@forwardpass.io">contact@forwardpass.io</a>
+                        <br>
                         <!-- 2309 Windcliff Drive<br>
                         Marietta, GA, 30067, USA<br> -->
-                        Phone: (404) 789-1654
+                        <!-- Phone: (404) 789-1654 -->
                         <!-- <ul class="social">
                             <li><a href="https://www.google.com"><span class="fa fa-facebook"></span></a></li>
                             <li><a href="https://www.google.com"><span class="fa fa-google-plus"></span></a></li>
@@ -494,7 +557,8 @@
     <script>
       $(function(){
           $("#head-title").typed({
-            strings: ["Machine Learning Solutions^1000", "Dataset Creation^1000" ,"Cloud and On-premises^1000"],
+            // strings: ["Machine Learning Solutions^1000", "Dataset Creation^1000" ,"Cloud and On-premises^1000"],
+            strings: ["Robotic Platform^1000", "Machine Learning Integration^1000" ,"Cable Driven Serial Robotics^1000"],
             typeSpeed: 100,
             loop: true,
             startDelay: 100
