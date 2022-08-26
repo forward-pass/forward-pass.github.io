@@ -1,2 +1,2 @@
 # forward-pass.github.io
-website
+website: https://forwardpass.io/
